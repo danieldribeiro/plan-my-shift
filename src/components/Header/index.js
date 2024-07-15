@@ -7,8 +7,6 @@ import Image from "next/image";
 export default function Header() {
   const [active, setActive] = useState(false);
 
-  console.log(active)
-
   const handleClick = () => {
     setActive(!active);
   };

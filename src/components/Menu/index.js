@@ -4,7 +4,7 @@ export default function Menu({active}) {
   return (
     <Container active={active}>
       <ul>
-        <li>Escala</li>
+        <li>Escalas</li>
         <li>Minhas escalas</li>
         <li>Pessoal</li>
         <li>Atividades</li>

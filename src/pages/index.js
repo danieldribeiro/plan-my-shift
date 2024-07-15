@@ -5,6 +5,7 @@ import GlobalStyles from '../styles/global'
 import theme from '../styles/theme'
 import Head from "next/head";
 import Header from "@/components/Header";
+import NextShift from "@/components/NextShift";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         </Head>
         <main>
           <Header/>
+          <NextShift/>
         </main>
       </ThemeProvider>
     </React.StrictMode>
