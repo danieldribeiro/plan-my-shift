@@ -1,3 +1,5 @@
+'use-client'
+
 import { Container } from "./styles"
 
 export default function Input({icon, type, placeholder}){

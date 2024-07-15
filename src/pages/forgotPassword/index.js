@@ -10,27 +10,27 @@ import Input from "@/components/Input"
 
 import Image from 'next/image'
 import Logo from '../../../public/images/EscalApp.svg'
-import { CiUser } from "react-icons/ci";
-import { CiLock } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { GoArrowLeft } from "react-icons/go";
 import Button from "@/components/Button"
 import Link from 'next/link'
 
-export default function Login() {
+export default function forgotPassword() {
   return (
       <ThemeProvider theme={theme}>
         <GlobalStyles/>
           <Container>
+            <Link href="/login" className='back'>
+              <GoArrowLeft />
+              Voltar
+            </Link>
             <Form>
               <Image src={Logo} alt="Logo Plan my Shift" className='logo' priority/>
-              <Input icon={<CiUser/>} type={'text'} placeholder={'Usuário'} />
-              <Input icon={<CiLock/>} type={'password'} placeholder={'Senha'} />
-              <Link href='/forgotPassword'>Esqueci a senha</Link>
-              <Button title={'Entrar'}/>
-              <div className='hr-wrapper'>
-                <hr />
-                <span>or</span>
-              </div>
-              <Button title={'Criar uma conta'}/>
+              <p>
+                Para recuperar sua senha, insira seu e-mail abaixo e clique no botão &quot;Recuperar senha&quot;
+              </p>
+              <Input icon={<CiMail/>} type={'password'} placeholder={'E-mail'} />
+              <Button title={'Recuperar senha'}/>
             </Form>
           </Container>
       </ThemeProvider>

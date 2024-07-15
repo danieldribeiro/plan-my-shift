@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: 40x;
   border-bottom: 2px solid ${({theme}) => theme.COLORS.DISABLED};
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
   label{
     display: flex;
