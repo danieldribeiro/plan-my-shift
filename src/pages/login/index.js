@@ -30,7 +30,9 @@ export default function Login() {
                 <hr />
                 <span>or</span>
               </div>
-              <Button title={'Criar uma conta'}/>
+              <Link href='/createAccount'>
+                <Button title={'Criar uma conta'}/>
+              </Link>
             </Form>
           </Container>
       </ThemeProvider>

@@ -10,12 +10,14 @@ import Input from "@/components/Input"
 
 import Image from 'next/image'
 import Logo from '../../../public/images/EscalApp.svg'
+import { CiUser } from "react-icons/ci";
+import { CiLock } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { GoArrowLeft } from "react-icons/go";
 import Button from "@/components/Button"
 import Link from 'next/link'
 
-export default function forgotPassword() {
+export default function createAccount() {
   return (
       <ThemeProvider theme={theme}>
         <GlobalStyles/>
@@ -26,11 +28,10 @@ export default function forgotPassword() {
             </Link>
             <Form>
               <Image src={Logo} alt="Logo Plan my Shift" className='logo' priority/>
-              <p>
-                Para recuperar sua senha, insira seu e-mail abaixo e clique no botão &quot;Recuperar senha&quot;
-              </p>
+              <Input icon={<CiUser/>} type={'text'} placeholder={'Usuário'} />
               <Input icon={<CiMail/>} type={'mail'} placeholder={'E-mail'} />
-              <Button title={'Recuperar senha'}/>
+              <Input icon={<CiLock/>} type={'password'} placeholder={'Senha'} />
+              <Button title={'Criar conta'}/>
             </Form>
           </Container>
       </ThemeProvider>
